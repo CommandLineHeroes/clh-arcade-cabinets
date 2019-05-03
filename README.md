@@ -11,6 +11,7 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
     sudo modprobe -r ideapad_laptop
     sudo rfkill ublock all
     rfkill list
+    echo 'blacklist ideapad_laptop' | sudo tee -a /etc/modprobe.d/blacklist.conf
     ```
 5. Make sure screen doesn't dim or blank in power settings.
 6. Make sure that the latptop doesn't suspend when the lid is closed, by installing Gnome Tweaks and disable Suspend when laptop lid is closed
