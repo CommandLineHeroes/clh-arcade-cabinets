@@ -35,10 +35,7 @@ One of the laptops should be designated to act as the server.  It will have some
     wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
     ```
   1. open a new terminal
-  1. run these commands to install nodejs 11 and make it the default version of node
-    ```
-    nvm install 11
-    nvm alias default 11
-    ```
+  1. run this command to install nodejs 11 and make it the default version of node<br>
+    `nvm install 11 && nvm alias default 11`
 
 1. 
