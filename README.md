@@ -30,12 +30,12 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
 One of the laptops should be designated to act as the server.  It will have some extra stuff installed on it, and will make the games available to the rest of the laptops.  Here are the extra steps for the server laptop.
 
 1. Install [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md), install node 11, and set it as the default version of node.
-  a. 
+  1. 
     ```
     wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
     ```
-  b. open a new terminal
-  c. 
+  1. open a new terminal
+  1. run these commands to install nodejs 11 and make it the default version of node
     ```
     nvm install 11
     nvm alias default 11
