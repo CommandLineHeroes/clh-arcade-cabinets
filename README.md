@@ -24,3 +24,12 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
 1. Make sure that the latptop doesn't suspend when the lid is closed, by installing Gnome Tweaks and disable Suspend when laptop lid is closed
 1. Disable automatic screen lock in Privacy settings
 1. Disable Notifications in Settings / Notifications
+
+## Extra provisioning for the "server" laptop
+
+One of the laptops should be designated to act as the server.  It will have some extra stuff installed on it, and will make the games available to the rest of the laptops.  Here are the extra steps for the server laptop.
+
+1. Install [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md)
+    ```
+    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+    ```
