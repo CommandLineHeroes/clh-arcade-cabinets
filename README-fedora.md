@@ -40,17 +40,17 @@ sudo dnf update -y
     sudo apt install chromium-browser gnome-tweaks
     ```
 1. In system Settings
-  1. Notifications
-    1. disable "Notification Popups"
-  1. Privacy
-    1. disable "Screen Lock"
-  1. Power settings
-    1. disable "Dim screen when inactive"
-    1. set Blank screen to "Never"
+    1. Notifications
+        1. disable "Notification Popups"
+    1. Privacy
+        1. disable "Screen Lock"
+    1. Power settings
+        1. disable "Dim screen when inactive"
+        1. set Blank screen to "Never"
 1. In Tweaks 
-  1. General
-    1. disable "Animations"
-    1. disable "Suspend when laptop lid is closed"
+    1. General
+      1. disable "Animations"
+      1. disable "Suspend when laptop lid is closed"
 1. Make sure that the latptop doesn't suspend when the lid is closed, by installing Gnome Tweaks and disable Suspend when laptop lid is closed
 1. Set the background image: `gsettings set org.gnome.desktop.background picture-uri https://www.redhat.com/cms/managed-files/clh-s3e3-desktop-1920x1080.png`
 
