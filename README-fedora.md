@@ -52,6 +52,7 @@ sudo dnf update -y
     1. disable "Animations"
     1. disable "Suspend when laptop lid is closed"
 1. Make sure that the latptop doesn't suspend when the lid is closed, by installing Gnome Tweaks and disable Suspend when laptop lid is closed
+1. Set the background image: `gsettings set org.gnome.desktop.background picture-uri https://www.redhat.com/cms/managed-files/clh-s3e3-desktop-1920x1080.png`
 
 ## Extra provisioning for the "server" laptop
 
