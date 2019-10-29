@@ -12,7 +12,7 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
 1. Enable the wi-fi driver using this: 
     ```
     sudo modprobe -r ideapad_laptop
-    sudo rfkill ublock all
+    sudo rfkill unblock all
     rfkill list
     echo 'blacklist ideapad_laptop' | sudo tee -a /etc/modprobe.d/blacklist.conf
     ```
