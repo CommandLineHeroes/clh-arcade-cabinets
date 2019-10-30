@@ -10,9 +10,7 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
 
 
 
-sudo dnf update -y
-
-
+1. Make sure secure boot is disabled in the bios.  Enter bios by pressing F2 at boot.
 1. Install the latest version of Fedora
 1. Update all packages
     ```
