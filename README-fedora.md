@@ -51,15 +51,13 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
         1. disable "Suspend when laptop lid is closed"
 1. Make sure that the latptop doesn't suspend when the lid is closed, by installing Gnome Tweaks and disable Suspend when laptop lid is closed
 1. Set the background image: `wget https://www.redhat.com/cms/managed-files/clh-s3e3-desktop-1920x1080.png -O ~/Downloads/clhbg.png && gsettings set org.gnome.desktop.background picture-uri ~/Downloads/clhbg.png`
-
-## Extra provisioning for the "server" laptop
-
-One of the laptops should be designated to act as the server.  It will have some extra stuff installed on it, and will make the games available to the rest of the laptops.  Here are the extra steps for the server laptop.
-
-1. Install [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md), install node 11, and set it as the default version of node.
+1. Install [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md), install node 12, and set it as the default version of node.
   1. install nvm: `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash`
   1. open a new terminal
   1. run this command to install nodejs 11 and make it the default version of node<br>
-    `nvm install 11 && nvm alias default 11`
+    `nvm install 12 && nvm alias default 12`
 
-1. 
+## Extra provisioning for specific games
+
+ - **memrecall** - needs `libjack.so.0`.  Run: `sudo dnf install jack-audio-connection-kit`
+ 
