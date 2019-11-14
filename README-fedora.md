@@ -35,7 +35,7 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
 1. Using the NVIDIA control panel, go to the "PowerMizer" section and set "Preferred Mode" to "Maximum Performance"
 1. Install some packages:
     ```
-    sudo apt install chromium-browser gnome-tweaks xdotool chrome-gnome-shell
+    sudo dnf install gnome-tweaks xdotool
     ```
 1. In system Settings
     1. Notifications
