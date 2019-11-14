@@ -52,14 +52,14 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
 1. Make sure that the latptop doesn't suspend when the lid is closed, by installing Gnome Tweaks and disable Suspend when laptop lid is closed
 1. Set the background image: `wget https://www.redhat.com/cms/managed-files/clh-s3e3-desktop-1920x1080.png -O ~/Downloads/clhbg.png && gsettings set org.gnome.desktop.background picture-uri ~/Downloads/clhbg.png`
 1. Install [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md), install node 12, and set it as the default version of node.
-  1. install nvm: `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash`
-  1. open a new terminal
-  1. run this command to install nodejs 11 and make it the default version of node<br>
+    1. install nvm: `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash`
+    1. open a new terminal
+    1. run this command to install nodejs 11 and make it the default version of node<br>
     `nvm install 12 && nvm alias default 12`
 1. install [auto fullscreen](https://extensions.gnome.org/extension/1891/auto-fullscreen/)
-  1. IF you want to turn off the fullscreening while working on laptop setup, open Tweak tools, go to Extensions, and toggle off auto fullscreen
+    1. IF you want to turn off the fullscreening while working on laptop setup, open Tweak tools, go to Extensions, and toggle off auto fullscreen
 1. install clh-arcade
-  1. `npm install -g clh-arcade`
+    1. `npm install -g clh-arcade`
 
 ## Extra provisioning for specific games
 
