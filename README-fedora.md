@@ -26,9 +26,9 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
         1. disable Automatic Update Notifications
     1. Click the [☰] icon and go to Software Repositories
         1. enable the google-chrome repo
-1. Install the latest NVIDA driver using the command
+1. Install some packages (including the NVIDA driver)
     ```
-    sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda
+    sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda gnome-tweaks xdotool jack-audio-connection-kit google-chrome-stable
     ```
 1. Enable the wi-fi driver using this: 
     ```
@@ -38,11 +38,8 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
     echo 'blacklist ideapad_laptop' | sudo tee -a /etc/modprobe.d/blacklist.conf
     ```
 1. Reboot
-1. Using the NVIDIA control panel, go to the "PowerMizer" section and set "Preferred Mode" to "Maximum Performance"
-1. Install some packages:
-    ```
-    sudo dnf install gnome-tweaks xdotool jack-audio-connection-kit google-chrome-stable
-    ```
+1. Open the NVIDIA control panel
+    1. go to the "PowerMizer" section and set "Preferred Mode" to "Maximum Performance"
 1. In system Settings
     1. Notifications
         1. disable "Notification Popups"
