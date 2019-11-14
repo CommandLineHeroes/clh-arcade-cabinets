@@ -45,6 +45,8 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
     1. Power settings
         1. disable "Dim screen when inactive"
         1. set Blank screen to "Never"
+    1. Details / Default Applications
+        1. set Web to "Firefox"
 1. In Tweaks 
     1. General
         1. disable "Animations"
