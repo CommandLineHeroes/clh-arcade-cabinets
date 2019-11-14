@@ -56,8 +56,25 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
   1. open a new terminal
   1. run this command to install nodejs 11 and make it the default version of node<br>
     `nvm install 12 && nvm alias default 12`
+1. install [auto fullscreen](https://extensions.gnome.org/extension/1891/auto-fullscreen/)
+  1. IF you want to turn off the fullscreening while working on laptop setup, open Tweak tools, go to Extensions, and toggle off auto fullscreen
+1. install clh-arcade
+  1. `npm install -g clh-arcade`
 
 ## Extra provisioning for specific games
 
  - **memrecall** - needs `libjack.so.0`.  Run: `sudo dnf install jack-audio-connection-kit`
  
+## Launch CLH Arcade
+
+1. Copy onto the laptop the games you want to run.  This directory should include a `games.json` file, all the games assets, and the `.desktop` files for each game.
+1. copy the `.desktop` files to `~/.local/share/applications/`
+1. run the register-mimetypes script (this should be bundled with the games)
+   ```
+   bash register-mimetypes.sh
+   ```
+1. run `sudo update-desktop-database` to create launchers for each game
+1. `cd` into the same folder as the `games.json` file
+1. run `clh-arcade`
+
+Enjoy!
