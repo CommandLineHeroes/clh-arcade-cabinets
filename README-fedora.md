@@ -35,7 +35,7 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
 1. Using the NVIDIA control panel, go to the "PowerMizer" section and set "Preferred Mode" to "Maximum Performance"
 1. Install some packages:
     ```
-    sudo dnf install gnome-tweaks xdotool
+    sudo dnf install gnome-tweaks xdotool jack-audio-connection-kit
     ```
 1. In system Settings
     1. Notifications
