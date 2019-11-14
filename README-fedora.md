@@ -20,6 +20,12 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
     ```
     sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
     ```
+1. In Software
+    1. Click the [☰] icon and go to Update Preferences
+        1. disable Automatic Updates
+        1. disable Automatic Update Notifications
+    1. Click the [☰] icon and go to Software Repositories
+        1. enable the google-chrome repo
 1. Install the latest NVIDA driver using the command
     ```
     sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda
@@ -35,7 +41,7 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
 1. Using the NVIDIA control panel, go to the "PowerMizer" section and set "Preferred Mode" to "Maximum Performance"
 1. Install some packages:
     ```
-    sudo dnf install gnome-tweaks xdotool jack-audio-connection-kit
+    sudo dnf install gnome-tweaks xdotool jack-audio-connection-kit google-chrome-stable
     ```
 1. In system Settings
     1. Notifications
@@ -51,10 +57,6 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
     1. General
         1. disable "Animations"
         1. disable "Suspend when laptop lid is closed"
-1. In Software
-    1. Click the [☰] icon and go to Update Preferences
-        1. disable Automatic Updates
-        1. disable Automatic Update Notifications
 1. Set the background image: `wget https://www.redhat.com/cms/managed-files/clh-s3e3-desktop-1920x1080.png -O ~/Downloads/clhbg.png && gsettings set org.gnome.desktop.background picture-uri ~/Downloads/clhbg.png`
 1. Install [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md), install node 12, and set it as the default version of node.
     1. install nvm: `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash`
