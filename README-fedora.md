@@ -56,8 +56,10 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
     1. open a new terminal
     1. run this command to install nodejs 11 and make it the default version of node<br>
     `nvm install 12 && nvm alias default 12`
-1. install [auto fullscreen](https://extensions.gnome.org/extension/1891/auto-fullscreen/)
-    1. IF you want to turn off the fullscreening while working on laptop setup, open Tweak tools, go to Extensions, and toggle off auto fullscreen
+1. install auto fullscreen
+    1. Open chrome and go install [the gnome shell extension](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)
+    1. Go to [auto fullscreen](https://extensions.gnome.org/extension/1891/auto-fullscreen/) and click the "On" slider to install it.
+    1. Note: if you want to turn off the fullscreening while working on laptop setup, open Tweak tools, go to Extensions, and toggle off auto fullscreen, then turn it back on before players arrive.
 1. install clh-arcade
     1. `npm install -g clh-arcade`
 
