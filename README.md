@@ -66,10 +66,6 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
     1. Note: if you want to turn off the fullscreening while working on laptop setup, open Tweak tools, go to Extensions, and toggle off auto fullscreen, then turn it back on before players arrive.
 1. install clh-arcade
     1. `npm install -g clh-arcade`
-
-## Extra provisioning for specific games
-
- - **memrecall** - needs `libjack.so.0`.  Run: `sudo dnf install jack-audio-connection-kit`
  
 ## Launch CLH Arcade
 
