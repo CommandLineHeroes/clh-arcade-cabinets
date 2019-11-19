@@ -80,3 +80,27 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
 1. run `clh-arcade`
 
 Enjoy!
+
+## Troubleshooting
+
+Here are some instructions for troubleshooting various issues that have occurred in the past.
+
+### External displays not detected
+
+If an external display is not showing up, do the following.
+
+ 1. `sudo cp /usr/share/X11/xorg.conf.d/nvidia.conf /etc/X11/xorg.conf.d/`
+ 1. Edit `/etc/X11/xorg.conf.d/nvidia.conf`, go into the `OutputClass` section and add `Option "PrimaryGPU" "yes"`
+ 1. Save and reboot
+ 1. When you're back in gnome, run gnome-tweaks
+ 1. Go to Extensions
+ 1. disable the auto full screen extension
+ 1. Open Settings / Displays
+ 1. You should now see two screens! :tv::tv:
+ 1. Set it to mirror, and hit apply
+ 1. You should now have the screens mirrored from that laptop to the arcade screen
+ 1. Go back into gnome-tweaks
+ 1. Turn the auto fullscreen extension back on
+ 1. Last, open terminal and `cd ~/clh-arcade && clh-arcade`
+ 
+Thanks to [spot](https://github.com/spotrh) for fixing this persistent problem!
