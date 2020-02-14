@@ -104,3 +104,7 @@ If an external display is not showing up, do the following.
  1. Last, open terminal and `cd ~/clh-arcade && clh-arcade`
  
 Thanks to [spot](https://github.com/spotrh) for fixing this persistent problem!
+
+## QR Codes for field reporting
+
+This repo contains QR codes, one for each cabinet.  They will be printed out and affixed to the back of each cabinet.  If on-site staff find an issue with a cabinet, they can scan the QR code to send us a message about any issues with the cabinet.
