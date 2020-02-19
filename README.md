@@ -108,3 +108,8 @@ Thanks to [spot](https://github.com/spotrh) for fixing this persistent problem!
 ## QR Codes for field reporting
 
 This repo contains QR codes, one for each cabinet.  They will be printed out and affixed to the back of each cabinet.  If on-site staff find an issue with a cabinet, they can scan the QR code to send us a message about any issues with the cabinet.
+
+
+## Developer notes
+
+The QR codes were generated with the [generate-qr-codes.sh](./generate-qr-codes.sh) script.  If changes need to be made to the QR codes, edit that file and regenerate them.
