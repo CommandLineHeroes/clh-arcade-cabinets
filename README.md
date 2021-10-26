@@ -12,6 +12,14 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
 
 1. Make sure secure boot is disabled in the bios.  Enter bios by pressing F2 at boot.  This will fix "NVIDIA driver not found. Falling back to nouveau" warning during boot.  This step has already been done on all 5 laptops so it shouldn't need to be done again.
 1. Install the latest version of Fedora
+1. Enable the wi-fi driver using this: 
+    ```
+    sudo modprobe -r ideapad_laptop
+    sudo rfkill unblock all
+    rfkill list
+    echo 'blacklist ideapad_laptop' | sudo tee -a /etc/modprobe.d/blacklist.conf
+    ```
+1. Reboot
 1. Update all packages
     ```
     sudo dnf update -y
@@ -30,14 +38,6 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
     ```
     sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda gnome-tweaks xdotool jack-audio-connection-kit google-chrome-stable
     ```
-1. Enable the wi-fi driver using this: 
-    ```
-    sudo modprobe -r ideapad_laptop
-    sudo rfkill unblock all
-    rfkill list
-    echo 'blacklist ideapad_laptop' | sudo tee -a /etc/modprobe.d/blacklist.conf
-    ```
-1. Reboot
 1. Open the NVIDIA control panel
     1. go to the "PowerMizer" section and set "Preferred Mode" to "Maximum Performance"
 1. In system Settings
