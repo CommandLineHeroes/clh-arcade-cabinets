@@ -37,7 +37,8 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
 1. Install some packages (including the NVIDA driver)
     ```
     sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda gnome-tweaks xdotool jack-audio-connection-kit google-chrome-stable
-    ```
+    ``` 
+1. Reboot
 1. Open the NVIDIA control panel
     1. go to the "PowerMizer" section and set "Preferred Mode" to "Maximum Performance"
 1. In system Settings
