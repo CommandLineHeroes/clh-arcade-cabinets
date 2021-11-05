@@ -26,7 +26,7 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
         2. enable the RPM Fusion - nonfree - NVIDIA Driver
 1. Install some packages
     ```
-    sudo dnf install gnome-tweaks xdotool google-chrome-stable
+    sudo dnf install nodejs gnome-tweaks xdotool google-chrome-stable
     ``` 
 1. Follow the NVIDIA Optimus guide for Fedora here: https://docs.fedoraproject.org/en-US/quick-docs/how-to-set-nvidia-as-primary-gpu-on-optimus-based-laptops/
 1. Reboot, and verify chrome is using nvidia driver with: chrome://gpu
@@ -49,11 +49,6 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
         1. disable "Animations"
         1. disable "Suspend when laptop lid is closed"
 1. Set the background image: `wget https://www.redhat.com/cms/managed-files/clh-s3e3-desktop-1920x1080.png -O ~/Downloads/clhbg.png && gsettings set org.gnome.desktop.background picture-uri ~/Downloads/clhbg.png`
-1. Install [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md), install node 12, and set it as the default version of node.
-    1. install nvm: `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash`
-    1. open a new terminal
-    1. run this command to install nodejs 11 and make it the default version of node<br>
-    `nvm install 12 && nvm alias default 12`
 1. install auto fullscreen
     1. Open chrome and go install [the gnome shell extension](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)
     1. Go to [auto fullscreen](https://extensions.gnome.org/extension/1891/auto-fullscreen/) and click the "On" slider to install it.
