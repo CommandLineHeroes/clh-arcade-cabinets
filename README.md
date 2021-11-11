@@ -29,12 +29,12 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
     sudo dnf install nodejs gnome-tweaks xdotool google-chrome-stable
     ``` 
 1. Follow the NVIDIA Optimus guide for Fedora here: https://docs.fedoraproject.org/en-US/quick-docs/how-to-set-nvidia-as-primary-gpu-on-optimus-based-laptops/
-1. Reboot, and verify chrome is using nvidia driver with: chrome://gpu
-1. Verify WebGL performance here should have 60fps: https://threejs.org/examples/webgl_performance.html
-1. Reboot
 1. Open the NVIDIA control panel
     1. go to the "PowerMizer" section and set "Preferred Mode" to "Maximum Performance"
-1. In system Settings
+1. Reboot
+2. Verify chrome is using nvidia driver with: chrome://gpu
+3. Verify WebGL performance here should have 60fps: https://threejs.org/examples/webgl_performance.html
+4. In system Settings
     1. Notifications
         1. disable "Notification Popups"
     1. Privacy
@@ -44,29 +44,23 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
         1. set Blank screen to "Never"
     1. Details / Default Applications
         1. set Web to "Chrome"
-1. In Tweaks 
+5. In Tweaks 
     1. General
         1. disable "Animations"
         1. disable "Suspend when laptop lid is closed"
-1. Set the background image: `wget https://www.redhat.com/cms/managed-files/clh-s3e3-desktop-1920x1080.png -O ~/Downloads/clhbg.png && gsettings set org.gnome.desktop.background picture-uri ~/Downloads/clhbg.png`
-1. install auto fullscreen
+7. Set the background image: `wget https://www.redhat.com/cms/managed-files/clh-s3e3-desktop-1920x1080.png -O ~/Downloads/clhbg.png && gsettings set org.gnome.desktop.background picture-uri ~/Downloads/clhbg.png`
+8. Install auto fullscreen (Optional, Might not work)
     1. Open chrome and go install [the gnome shell extension](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)
     1. Go to [auto fullscreen](https://extensions.gnome.org/extension/1891/auto-fullscreen/) and click the "On" slider to install it.
     1. Note: if you want to turn off the fullscreening while working on laptop setup, open Tweak tools, go to Extensions, and toggle off auto fullscreen, then turn it back on before players arrive.
-1. install clh-arcade
-    1. `npm install -g clh-arcade`
+9. install clh-arcade
+    1. `sudo npm install -g clh-arcade`
  
 ## Launch CLH Arcade
 
-1. Copy onto the laptop the games you want to run.  This directory should include a `games.json` file, all the games assets, and the `.desktop` files for each game.
-1. copy the `.desktop` files to `~/.local/share/applications/`
-1. run the register-mimetypes script (this should be bundled with the games)
-   ```
-   bash register-mimetypes.sh
-   ```
-1. run `sudo update-desktop-database` to create launchers for each game
-1. `cd` into the same folder as the `games.json` file
-1. run `clh-arcade`
+1. `git clone https://github.com/CommandLineHeroes/clh-arcade-games.git`
+2. `cd clh-arcade-games`
+3. `clh-arcade`
 
 Enjoy!
 
