@@ -54,13 +54,17 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
     1. Go to [auto fullscreen](https://extensions.gnome.org/extension/1891/auto-fullscreen/) and click the "On" slider to install it.
     1. Note: if you want to turn off the fullscreening while working on laptop setup, open Tweak tools, go to Extensions, and toggle off auto fullscreen, then turn it back on before players arrive.
 9. install clh-arcade
-    1. `sudo npm install -g clh-arcade`
- 
+    1. `git clone https://github.com/CommandLineHeroes/clh-arcade-games.git`
+    2. `sudo npm install -g clh-arcade`
+10. Set Google Chrome homepage to `localhost:1234`
+
 ## Launch CLH Arcade
 
-1. `git clone https://github.com/CommandLineHeroes/clh-arcade-games.git`
-2. `cd clh-arcade-games`
-3. `clh-arcade`
+1. `cd clh-arcade-games`
+2. `clh-arcade`
+3. Open Chrome, default homepage should be the Arcade
+4. Press F11 to fullscreen
+5. NOTE: Do note close the terminal from step #2 that will stop the server! Leave it running in the background.
 
 Enjoy!
 
