@@ -17,16 +17,17 @@ The cabinets are powered by Lenovo Legion gaming laptops here is the checklist f
     sudo dnf update -y
     ```
 1. Reboot
-1. In Software
+1. On the Gnome login screen, Select "Gnome on Xorg" in sign-in options
+3. In Software
     1. Click the [☰] icon and go to Update Preferences
         1. disable Automatic Updates
         1. disable Automatic Update Notifications
     1. Click the [☰] icon and go to Software Repositories
         1. enable the google-chrome repo
         2. enable the RPM Fusion - nonfree - NVIDIA Driver
-1. Install some packages
+4. Install some packages
     ```
-    sudo dnf install nodejs gnome-tweaks xdotool google-chrome-stable
+    sudo dnf install nodejs gnome-tweaks xdotool google-chrome-stable screenfetch
     ``` 
 1. Follow the NVIDIA Optimus guide for Fedora here: https://docs.fedoraproject.org/en-US/quick-docs/how-to-set-nvidia-as-primary-gpu-on-optimus-based-laptops/
 1. Open the NVIDIA control panel
